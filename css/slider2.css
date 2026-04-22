@@ -1,0 +1,163 @@
+.sliderWrapper{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 162px;
+    height: 400px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.slider-button{
+    box-shadow: 0 5px 38px 0 #000;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+background: rgba(0, 0, 0, 0);
+margin: -70px auto 0 auto;
+position: relative;
+z-index: 9;
+display: block;
+font-weight: 300;
+font-size: 28px;
+line-height: 50%;
+text-align: center;
+color: #000;
+border-radius: 56px;
+width: 232px;
+height: 33px;
+border: 1px solid #989898;
+font-family: 'DrukCyr';
+text-transform: uppercase;
+transition: .2s;
+}
+
+.slider-button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.slide {
+    position: absolute;
+    width: 162px;
+    height: 286px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(190deg, rgba(183, 220, 255, 0) 0%, #0084ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.slide img {
+    width: 143px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px
+}
+
+/* Центральний активний слайд (опущений вниз) */
+.slide.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 10;
+    transform: translate3d(0, 50px, 0) scale(1);
+}
+
+/* Слайд зліва (піднятий вгору) */
+.slide.prev {
+    opacity: 0.7;
+    transform: translate3d(-66%, -20px, -100px) scale(0.85);
+    z-index: 5;
+}
+
+/* Слайд справа (піднятий вгору) */
+.slide.next {
+    opacity: 0.7;
+    transform: translate3d(66%, -20px, -100px) scale(0.85);
+    z-index: 5;
+}
+
+/* Кнопки */
+.controls {
+    margin-top: 80px;
+  
+    top: 195px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    z-index: 99;
+}
+
+#prev,
+#next {
+    width: 53px;
+    height: 53px;
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, #eeeae8 0%, rgba(97, 92, 91, 0.34) 100%);
+    border: 1px solid #989898;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#prev:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/rev/arrow-l.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    width: 20px;
+    height: 20px;
+    z-index: 9;
+}
+
+#next::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/rev/arrow-r.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    width: 20px;
+    height: 20px;
+    z-index: 9;
+}
+
+.slider button {
+    padding: 15px 25px;
+    cursor: pointer;
+    background: #ff77af;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}

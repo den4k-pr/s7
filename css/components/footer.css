@@ -1,0 +1,98 @@
+.footer {
+    background-image: url(../../images/footer.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    backdrop-filter: blur(4px);
+    border-radius: 35px 35px 0 0;
+    padding: 12px 0;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(150px);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 430px;
+
+    transition: all .5s ease;
+}
+
+.footer.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.footer-timer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 7px;
+}
+
+.footer-timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-timer-value {
+    border-radius: 150px;
+    width: 67px;
+    height: 38px;
+    background-color: #fff;
+    color: #000;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 117%;
+    text-align: center;
+}
+
+.footer-timer-time {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    color: #000;
+}
+
+
+.footer_text {
+    padding-top: 1.6rem;
+}
+
+.footerButton{
+    border-radius: 130px;
+max-width: 320px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 0 auto;
+height: 65px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: linear-gradient(90deg, #52acff 0%, #0084ff 50.48%, #52acff 100%);
+}
+
+.footerButton p{
+font-weight: 800;
+font-size: 22px;
+line-height: 132%;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+
+.footerButton span{
+font-weight: 700;
+font-size: 10px;
+line-height: 290%;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}

@@ -1,0 +1,186 @@
+.s9 .container{
+    margin-bottom: 60px;
+}
+.s9{
+    padding-bottom: 10px;
+}
+.slick-arrow{
+        margin-bottom: -40px;
+}
+.slick-dotted.slick-slider{
+    width: 300px !important;
+}
+.gallery img {
+    width: 100%;
+    height: 370px;
+    object-fit: contain;
+}
+/* КОНТЕЙНЕР СЛАЙДЕРА */
+.gallery {
+    max-width: 900px;          /* 270px * 3 + отступы */
+    margin: 0 auto;
+}
+
+/* СЛАЙДЫ */
+.gallery .slick-slide {
+    width: 100%;
+    max-width: 300px !important;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* ТРЕК - ОБЯЗАТЕЛЬНО */
+.gallery .slick-track {
+    display: flex !important;
+    flex-direction: row !important;  /* СТРОКА, а не столбик */
+}
+/* ========== СТРЕЛКИ ПОД СЛАЙДАМИ, РЯДОМ, ПО ЦЕНТРУ ========== */
+.gallery .slick-prev,
+.gallery .slick-next {
+    width: 51px;
+    height: 51px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    top: auto !important;      /* Убираем привязку к центру по вертикали */
+    bottom: -15px !important;  /* Стрелки под слайдами */
+    transform: none !important;
+    z-index: 50;
+    outline: none;
+    position: absolute !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1 !important;
+}
+
+/* Левая стрелка - СЛЕВА от центра */
+.gallery .slick-prev {
+    background-image: url('../images/slider-arrow-left-2.png');
+    left: 50% !important;      /* Привязка к центру */
+    right: auto !important;
+    margin-left: -75px !important;  /* Сдвиг влево от центра */
+    box-shadow: 0 4px 10px -3px #0000006b;
+}
+
+/* Правая стрелка - СПРАВА от центра */
+.gallery .slick-next {
+    background-image: url('../images/slider-arrow-right-2.png');
+    right: 50% !important;     /* Привязка к центру */
+    left: auto !important;
+    margin-right: -75px !important; /* Сдвиг вправо от центра */
+}
+
+/* УБИРАЕМ ВСЕ ЭФФЕКТЫ HOVER */
+.gallery .slick-prev:hover,
+.gallery .slick-next:hover,
+.gallery .slick-prev:focus,
+.gallery .slick-next:focus,
+.gallery .slick-prev:active,
+.gallery .slick-next:active {
+    background-image: url('../images/slider-arrow-left-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1 !important;
+    outline: none;
+}
+
+.gallery .slick-next:hover,
+.gallery .slick-next:focus,
+.gallery .slick-next:active {
+    background-image: url('../images/slider-arrow-right-2.png') !important;
+}
+
+/* Скрываем стандартные иконки стрелок */
+.gallery .slick-prev:before,
+.gallery .slick-next:before {
+    display: none;
+}
+
+/* ========== ТОЧКИ - ПО ЦЕНТРУ, ПОД СТРЕЛКАМИ ========== */
+.gallery .slick-dots {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    bottom: -100px !important;  /* Точки еще ниже, под стрелками */
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.gallery .slick-dots li {
+    width: 30px !important;
+    margin: 0 5px !important;
+    height: 4px;
+}
+
+.gallery .slick-dots li button {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 30px !important;
+    border-radius: 0;
+    height: 4px !important;
+    background: rgba(255, 255, 255, 0.51) !important;
+}
+
+.gallery .slick-dots li button:before {
+    display: none;
+}
+
+.gallery .slick-dots li.slick-active button {
+    background: #fff !important;
+}
+
+/* ========== АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ ========== */
+@media(max-width: 768px) {
+    .gallery .slick-prev {
+        margin-left: -70px !important;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .gallery .slick-next {
+        margin-right: -70px !important;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media(max-width: 480px) {
+    
+    .gallery .slick-dots {
+        bottom: -80px !important;
+    }
+}
+
+@media(max-width: 450px){
+    .s9{
+        margin-top: -40px;
+    }
+}
+
+@media(max-width: 440px){
+    .s9{
+        margin-top: -70px;
+    }
+}
+
+@media(max-width: 400px){
+    .s9{
+        margin-top: -100px;
+    }
+}
+
+/* ПОЛНОСТЬЮ ФИКСИРУЕМ РАЗМЕРЫ */
+.gallery .slick-slide,
+.gallery .slick-slide > div,
+.gallery .review-card {
+    width: 100% !important;
+    max-width: 300px !important;
+}

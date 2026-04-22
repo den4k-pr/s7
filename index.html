@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJYXJ8JV0W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NJYXJ8JV0W');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nullStyle.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/slider2.css">
+    <link rel="stylesheet" href="./css/components/popup.css">
+    <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+
+    <link rel="stylesheet" href="./css/components/section-1.css">
+    <link rel="stylesheet" href="./css/components/section-2.css">
+    <link rel="stylesheet" href="./css/components/section-3.css">
+    <link rel="stylesheet" href="./css/components/section-4.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "vgn8pua8km");
+    </script>
+
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script defer type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>All Courses</title>
+
+    <style>
+        .footer{
+            backdrop-filter: blur(6px);
+        }
+
+        .gallery-wrapper {
+            padding: 30px 0;
+        }
+        
+        .gallery-wrapper-fon{
+            box-shadow: 0 16px 22px 0 rgba(0, 0, 0, 0.16);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 15px 10px 15px;
+            max-width: 340px;
+            margin: 0 auto;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            position: relative;
+        }
+        
+        .gallery .slick-prev, .gallery .slick-next{
+            bottom: -60px !important;
+        }
+
+        .footerButton span{
+            font-size: 9px;
+        }
+
+
+
+
+
+        .epm-d{
+            position: absolute;
+            bottom: -30px;
+            min-width: 122%;
+            left: -10px;
+        }
+        .header-button-discount{
+            font-size: 17px;
+        }
+        .header-button{
+            justify-content: left;
+            padding-left: 8%;
+            line-height: 100%;
+            font-size: 20px;
+            margin: 0 auto 40px auto;
+        }
+        .header-button-discount span{
+            font-size: 21px;
+        }
+        .header-button-discount{
+            width: 78px;
+            height: 78px;
+            right: 0;
+            transform: scale(1.1);
+            position: absolute;
+        }
+        .titlered-d{
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            padding-bottom: 10px;
+            color: #ff6534;
+            text-shadow: 0 0 11px #fff;
+        }
+        .dddd{
+            margin: -20% auto 0 auto;
+        }
+        .header-price{
+            bottom: 33%;
+        }
+        @media(max-width: 430px){
+            .titlered-d{
+                font-size: 3.8vw;
+            }
+        }
+
+        .marquee-wrapper {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 99;
+            overflow: hidden;
+            box-shadow: 0 3px 17px 0 rgba(255, 81, 27, 0.35);
+background: linear-gradient(90deg, #ff6534 0%, #f78b11 50.96%, #ff6534 100%);
+            display: flex;
+            padding: 12px 0; /* Відступи зверху і знизу */
+        }
+
+        /* Контейнер з контентом, який рухається */
+        .header-topLine {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            /* Анімація: 15 секунд, рівномірно (linear), нескінченно (infinite) */
+            animation: scroll-marquee 30s linear infinite;
+        }
+
+        /* Стилізація тексту */
+        .header-topLine p {
+            margin: 0 15px; /* Відступи між текстом і блискавками */
+            color: #ffffff;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase; /* Робить всі літери великими, як на фото */
+            white-space: nowrap; /* Забороняє перенесення тексту на новий рядок */
+        }
+
+        /* Стилізація іконки */
+        .header-topLine img {
+            height: 20px; /* Висота блискавки */
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .header{
+            padding-top: 60px;
+        }
+
+        /* Сама анімація зсуву */
+        @keyframes scroll-marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                /* Зсуваємо блок рівно на його ширину */
+                transform: translateX(-100%); 
+            }
+        }
+
+        .footer{
+            background-image: url(./images/footer-2.webp);
+            height: 230px;
+            background-position: bottom;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            backdrop-filter: none;
+            background-color: transparent;
+        }
+        .footer-timer{
+            margin-bottom: -20px;
+        }
+        .footer-timer-time{
+            color: #fff;
+        }
+        .button-2{
+            width: 100%;
+            margin-bottom: -20px;
+            object-fit: contain;
+        }
+    </style>
+
+
+    
+    <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
+    <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="E3xMUTecjwRQfe" async></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="marquee-wrapper">
+            <div class="header-topLine">
+                <img src="./images/icon.svg" alt="">
+                <p>LAST Promo - 51% OFF
+spring Promo - 51% OFF</p>
+                <img src="./images/icon.svg" alt="">
+                <p>LAST Promo - 51% OFF
+spring Promo - 51% OFF</p>
+                <img src="./images/icon.svg" alt="">
+                <p>LAST Promo - 51% OFF
+spring Promo - 51% OFF</p>
+                <img src="./images/icon.svg" alt="">
+                <p>LAST Promo - 51% OFF
+spring Promo - 51% OFF</p>
+            </div>
+            
+            <div class="header-topLine">
+                <img src="./images/icon.svg" alt="">
+                <p>LAST Promo - 51% OFF
+spring Promo - 51% OFF</p>
+                <img src="./images/icon.svg" alt="">
+                <p>LAST Promo - 51% OFF
+spring Promo - 51% OFF</p>
+                <img src="./images/icon.svg" alt="">
+                <p>LAST Promo - 51% OFF
+spring Promo - 51% OFF</p>
+                <img src="./images/icon.svg" alt="">
+                <p>LAST Promo - 51% OFF
+spring Promo - 51% OFF</p>
+            </div>
+        </div>
+            <div class="section-1-top open-popup-btn">
+                <p class="section-1-top-left">
+                    ONLINE COURSES
+                </p>
+                <div class="section-1-top-right">
+                    <img src="./images/house.png" alt="">
+                    <p>Train At Home</p>
+                </div>
+            </div>
+            <h1 class="header-title">
+                1 year
+                <br>
+                access to
+            </h1>
+            <h2 class="header-subTitle">
+                all programs
+            </h2>
+            <img src="./images/karina.webp" class="karina" alt="">
+            <div class="header-programs">
+
+                <h2 class="header-programs-value">
+                    10
+                </h2>
+                <h3 class="header-programs-title">
+                    Programs
+                    <br>
+                    <span>+ All Courses Updates</span>
+                </h3>
+            </div>
+            <div class="header-price">
+                <h2 class="header-price-title">
+                    199€
+                </h2>
+              <img src="./images/epm-d.png" class="epm-d" alt="">
+            </div>
+            <div class="marquee-container">
+                <div class="marquee-content" id="marquee">
+                    <img src="./images/slide-fon-1.webp" alt="1">
+                    <img src="./images/slide-fon-2.webp" alt="2">
+                    <img src="./images/slide-fon-3.webp" alt="3">
+                </div>
+            </div>
+            <div class="dddd">
+            <p class="titlered-d">
+                 Extra Discount for your transformation
+            </p>
+            <button class="header-button open-popup-btn">
+                get Your 
+                <br>
+                extra offer
+                <div class="header-button-discount">
+                    <span>
+                        -51%
+                    </span>
+                    off
+                </div>
+            </button>
+            </div>
+        </header>
+        <section class="section-1">
+            <h2 class="section-1-title">
+                Stop Choosing.
+                <span>We Planned Your Year of Mobility</span>
+                Start Training
+            </h2>
+            <div class="section-1-wrapper">
+                <div class="section-1-content">
+                    <h2 class="section-1-content-title">
+                        <span>FLEXIBILITY + <br>STRENGTH + CONTROL =</span><br>
+                        Foundation to Mastery
+                    </h2>
+                </div>
+                <img src="./images/computer.webp" class="section-1-computer" alt="">
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="section-2-rate">
+                <div class="section-2-rate-content">
+                    <div class="section-2-rate-content-top">
+                        <img class="months-img" src="./images/months-1.png" alt="">
+                        <div class="section-2-rate-content-top-nav">
+                            <h3>
+                                UNLOCK + STABILIZE
+                            </h3>
+                            <p>
+                                Open tight areas while<br>building stability
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-bottopm-wrapper wrp-1">
+                        <div class="content-bottom-shadow-left"></div>
+                        <div class="section-2-rate-content-bottom">
+
+                            <img class="cards-img" src="./images/cards-1.webp" alt="">
+                            <p>
+                                <img class="check-img" src="./images/check.png" alt="">
+                                Beginner Mobility
+                            </p>
+                            <p>
+                                <img class="check-img" src="./images/check.png" alt="">
+                                Only Flexibility 1+2
+                            </p>
+                            <p>
+                                <img class="check-img" src="./images/check.png" alt="">
+                                Power Fit
+                            </p>
+
+                        </div>
+                        <div class="content-bottom-shadow-right"></div>
+                    </div>
+                </div>
+                <img src="./images/line-1.png" class="line-img-1 step" alt="">
+            </div>
+
+            <div class="section-2-rate rate-2">
+                <img src="./images/line-2.png" class="line-img-2 step" alt="">
+                <div class="section-2-rate-content">
+                    <div class="section-2-rate-content-top">
+                        <img class="months-img" src="./images/months-2.png" alt="">
+                        <div class="section-2-rate-content-top-nav">
+                            <h3>
+                                DEEPEN + STRENGTHEN
+                            </h3>
+                            <p>
+                                Goal: Learn to control<br>your new range
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-bottopm-wrapper wrp-2">
+                        <div class="content-bottom-shadow-left"></div>
+                        <div class="section-2-rate-content-bottom">
+                            <img class="cards-img" src="./images/cards-2.webp" alt="">
+                            <p>
+                                <img class="check-img" src="./images/check.png" alt="">
+                                Front Split & Middle Split
+                            </p>
+                            <p>
+                                <img class="check-img" src="./images/check.png" alt="">
+                                Back Mobility
+                            </p>
+                            <p>
+                                <img class="check-img" src="./images/check.png" alt="">
+                                InhomePower
+                            </p>
+                        </div>
+                        <div class="content-bottom-shadow-right"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-2-rate">
+                <div class="section-2-rate-content">
+                    <div class="section-2-rate-content-top">
+                        <img class="months-img" src="./images/months-3.png" style="width: 70px;" alt="">
+                        <div class="section-2-rate-content-top-nav">
+                            <h3>
+                                MASTER + REFINE
+                            </h3>
+                            <p>
+                                Goal: Precision in extreme ranges
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-bottopm-wrapper wrp-1">
+                        <div class="content-bottom-shadow-left"></div>
+                        <div class="section-2-rate-content-bottom">
+                            <img class="cards-img" src="./images/cards-3.png" alt="">
+                            <p>
+                                <img class="check-img" src="./images/check.png" alt="">
+                                OF 3 (active flexibility)
+                            </p>
+                            <p>
+                                <img class="check-img" src="./images/check.png" alt="">
+                                Handstand (full control)
+                            </p>
+                        </div>
+                        <div class="content-bottom-shadow-right"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="section-3">
+            <img src="./images/elements.webp" style="width: 100%">
+            <img src="./images/guarane.png">
+
+
+        </section>
+        <section class="s2">
+            <div class="container">
+                <div class="label2">
+                    <p class="text1">THIS COURSE SETS</p>
+                    <p class="text2">YOUR PROGRESS TO LAST</p>
+                </div>
+
+
+                <table class="table_2">
+                    <tr>
+                        <td>
+                            <div class="table_item2">
+                                <img src="images/t1img.png">
+                                <p class="blue_p">support team to help with any question</p>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="table_item2">
+                                <img src="images/t2img.png">
+                                <p class="blue_p">сalendar to track your progress</p>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="table_item2">
+                                <img src="images/t3img.png">
+                                <p class="blue_p">guide to help you avoid possible mistakes</p>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="table_item2">
+                                <img src="images/t4img.png">
+                                <p class="blue_p">community chat &  live communication</p>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="section-4">
+            <div class="element">
+                <div class="rectangle"></div>
+                <p class="worried-about">WORRIED ABOUT CHOOSING WRONG PROGRAM?</p>
+                <p class="stop-choosing-get">
+                    <span class="text-wrapper">STOP CHOOSING. GET EVERYTHING. </span>
+                    <span class="span">ALL OPTIONS STAY OPEN FOR 12 MONTHS</span>
+                </p>
+                <div class="group">
+                    <div class="frame">
+                        <div class="q-how-to-start">Q: How to start?</div>
+                    </div>
+                    <div class="div">
+                        <div class="rectangle-2"></div>
+                        <p class="train-anywhere-on">
+                            <span class="text-wrapper-2">Train anywhere, on any device. </span>
+                            <span class="text-wrapper-3">Get clear learning paths for your level. Beginner? Advanced? DM
+                                us if you need individual approach and
+                                support team will consult you</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group-2">
+                    <div class="frame">
+                        <p class="p" style="margin: 0">Q: Can I really train in just 15-20 min?</p>
+                    </div>
+                    <div class="group-3">
+                        <div class="rectangle-3"></div>
+                        <p class="short-focused">
+                            <span class="text-wrapper-2">Short, Focused Sessions. <br /></span>
+                            <span class="text-wrapper-3">Mix programs based on your schedule. 15 min flexibility. 20 min
+                                strength. No gym needed. <br />Just you,
+                                mat, and basic props.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group-4">
+                    <div class="group-5">
+                        <div class="rectangle-4"></div>
+                        <p class="too-stiff-beginner">
+                            <span class="text-wrapper-4">Too stiff? </span>
+                            <span class="text-wrapper-5">→ Beginner Mobility + PowerFit.<br /></span>
+                            <span class="text-wrapper-6"> <br /></span>
+                            <span class="text-wrapper-4">Pretty mobile?</span>
+                            <span class="text-wrapper-5"> → Front Splits + Upgraded Only Flexibility +
+                                Inhomepower.</span>
+                            <span class="text-wrapper-6"> <br /><br /></span>
+                            <span class="text-wrapper-4">Very advanced?</span>
+                            <span class="text-wrapper-5"> → Middle Split + Handstand</span>
+                        </p>
+                    </div>
+                    <div class="div-wrapper">
+                        <p class="p">Q: Not sure if this is your level?</p>
+                    </div>
+                    <img class="element-render-clear"
+                        src="img/3d-render-clear-glass-question-mark-isolated-white-background-1.png" />
+                </div>
+                <img class="img" src="img/laptop.png" />
+                <div class="group-6">
+                    <img class="chatgpt-image" src="img/chatgpt-image-10-2026-13-10-12-1.png" />
+                    <img class="yoga-fitness" src="img/yoga-fitness-essentials-mat-blocks-water-bottle-1.png" />
+                </div>
+            </div>
+        </section>
+
+
+        <section class="s9">
+            <div class="container">
+                <p class="what-our-students">
+                    <span class="text-wrapper">WHAT OUR </span><br>
+                    <span class="span">STUDENTS SAY</span>
+
+                    <span class="text-wrapper"></span>
+                </p>
+                <br>
+                <div class="gallery-wrapper">
+                    <div class="gallery-wrapper-fon">
+                        <div class="gallery">
+                            <div><img src="images/otz/1.webp"></div>
+                            <div><img src="images/otz/2.webp"></div>
+                            <div><img src="images/otz/3.webp"></div>
+                            <div><img src="images/otz/4.webp"></div>
+                            <div><img src="images/otz/5.webp"></div>
+                            <div><img src="images/otz/6.webp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-4-new" style="padding: 15px 10px 0 10px;">
+            <p class="what-our-students" style="display: flex;flex-direction: column; text-transform: uppercase">
+                <span class="text-wrapper">Why this course </span>
+                <span class="span">changes<br>everything</span>
+                <span class="text-wrapper"></span>
+            </p>
+            <img src="./images/group.webp" style="width: 100%; margin-top: 10px" />
+        </section>
+        <img src="./images/surprise.webp">
+
+        <img src="./images/hi_there.webp">
+
+        <div class="frameM">
+            <img src="./images/kw.png" class="kw" style="filter: blur(2px);" />
+            <p class="zubalenok-approach">
+                <span class="text-wrapper">ZUBALENOK APPROACH IS SIMPLE YET EFFICIENT:<br /></span>
+                <span class="span">friendly for beginners, efficient for those, who want to advance. Quality over
+                    intensity, consistency over
+                    extremes</span>
+            </p>
+            <p class="mobility-based">Mobility-based trainings - safest &amp; most sustainable way to transform your
+                body</p>
+        </div>
+
+        <div class="sliderWrapper">
+            <p class="what-our-students">
+                <span class="text-wrapper">STUDENTS RESULTS</span><br>
+            </p>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="images/rev/slide-3.png" alt="3"></div>
+                    <div class="slide active"><img src="images/rev/slide-2.png" alt="2"></div>
+                    <div class="slide"><img src="images/rev/slide-1.png" alt="1"></div>
+                    <div class="slide"><img src="images/rev/slide-4.png" alt="4"></div>
+                    <div class="slide"><img src="images/rev/slide-5.png" alt="5"></div>
+                    <div class="slide"><img src="images/rev/slide-6.png" alt="6"></div>
+                    <div class="slide"><img src="images/rev/slide-7.png" alt="7"></div>
+                    <div class="slide"><img src="images/rev/slide-8.png" alt="8"></div>
+                    <div class="slide"><img src="images/rev/slide-9.png" alt="9"></div>
+                    <div class="slide"><img src="images/rev/slide-10.webp" alt="10"></div>
+                    <div class="slide"><img src="images/rev/slide-11.webp" alt="11"></div>
+                    <div class="slide"><img src="images/rev/slide-12.webp" alt="12"></div>
+                </div>
+
+
+                <div class="controls">
+                    <button id="prev"></button>
+                    <button id="next"></button>
+                </div>
+            </div>
+            <div style="line-height: 30px;" class="slider-button">
+                Mobility Progress
+            </div>
+        </div>
+
+        <img src="./images/wtp.webp">
+
+        <div class="asks" style="padding-left: 10px; padding-right: 10px">
+            <h2 class="mainTitle">
+                <span>Frequently </span><br>Asked Questions
+            </h2>
+            <div class="asksContainer">
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">How can I contact support if I have
+                            <br>
+                            questions?
+                        </p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">
+                            Please contact us at <a href="https://www.instagram.com/zubalenok.team/">@zubalenok.team on Instagram or support_zubalenok@zbl.agency<a>, and
+                            we'll assist you right</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">I can barely touch my toes. Is this too advanced for me? </p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">Not at all. 80% of students start exactly where you are. The program
+                            meets you at your level.</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">Can I use the course on my tablet / PC /
+                            TV?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">
+                            The methods for streaming videos to your TV depend on the type of device and the
+                            platform you’re registered on. Most commonly, you can use one of the following
+                            options:<br><br>1. Through a Smart TV browser<br>2. Through your phone or laptop + Smart
+                            TV (using the “Cast” or “Screen Mirroring” function)<br>3. Through an HDMI
+                            cable<br><br>Access from a PC is also available, simply open the link to the platform
+                            from your email on your computer.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">Can I get a refund if I don't like the course?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">
+                            Yes, we offer a 14-day money-back guarantee if you’re not satisfied.
+                        </p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">What are the terms of the money-back guarantee?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">Just mail <a href="https://www.instagram.com/zubalenok.team/">support_zubalenok@zbl.agency or DM @zubalenok.team.<a> Provide
+                            your Name, Surname, invoice and we will help you out. Refunds take 5-10 days to get
+                            proceeded.</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">Do I need special equipment to
+                            participate in the course?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">You'll only need comfortable workout clothes, a mat for exercises and
+                            yoga blocks to make workouts easier.</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">I don't have yoga blocks. What can I use instead? </p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">Thick books, sturdy boxes, stacks of folded towels, or firm cushions all
+                            work.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">Is the course suitable for pregnant
+                            women?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">Pregnant women are strongly advised to consult with a doctor before
+                            starting the course. While many exercises are safe, it’s important to ensure they are
+                            suitable for you.</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">What are the contraindications for
+                            participation?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">If you have chronic diseases or have recently undergone surgery, please
+                            consult a doctor before starting the course. Exercises should not cause pain or
+                            discomfort.</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">How can I get the most out of the course?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">Follow Karyna’s recommendations, perform the exercises regularly (4-6
+                            times a week), and remember the importance of proper nutrition and rest. Regular
+                            practice will lead to the best results.</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">I'm 50+. Will this work for me?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">
+                            Age doesn't matter. We have students in their 50s and 60s making incredible progress.</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">Are there any hidden costs?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">
+                            Absolutely not.<br>
+                            €199 = everything included. You save hundreds euros with 1 purchase.</p>
+                    </div>
+                </div>
+                <div class="asksContainer-item">
+                    <div class="asksContainer-item-top">
+                        <p class="mainText">Are the programs for beginners or advanced?</p>
+                        <p class="label">
+                            +
+                        </p>
+                    </div>
+                    <div class="asksContainer-item-bottom"
+                        style="max-height: 0px; overflow: hidden; transition: max-height 0.4s;">
+                        <p class="mainText">
+                            Both! You start where YOU are and progress at YOUR pace. That's why having all 10 programs
+                            matters - you're never "too beginner" or "too advanced.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" style="margin-bottom: 150px;">
+            <h2 class="mainTitleF">
+                <span>Contact</span><br>Information
+            </h2>
+            <p class="mainText" style="padding-top: 30px; text-align: center;"><span>Social Media Links:</span></p>
+            <div class="contact-box">
+                <a href="https://www.instagram.com/zubalenok/" class="contact-box-item">
+                    <img src="./images/inst-new.png" alt="inst">
+                    <p class="mainText">Zubalenok</p>
+                </a>
+                <a href="https://www.instagram.com/zubalenok.team/" class="contact-box-item">
+                    <img src="./images/support-new.png" alt="inst">
+                    <p class="mainText">Support</p>
+                </a>
+                <a href="mailto:SUPPORT_ZUBALENOK@ZBL.AGENCY" class="contact-box-item">
+                    <img src="./images/email-new.png" alt="inst">
+                    <p class="mainText">Email</p>
+                </a>
+            </div>
+            <div class="support_link">
+                <a href="mailto:SUPPORT_ZUBALENOK@ZBL.AGENCY">SUPPORT_ZUBALENOK@ZBL.AGENCY</a>
+            </div>
+            <a href="/policy" class="contactlink">Privacy Policy and User Agreement</a>
+        </div>
+
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <button class="close-btn">&times;</button>
+
+                <h2 class="popup-title">Fill out the form</h2>
+                <p class="popup-subtitle">to get access to</p>
+                <h3 class="product-name">all courses </h3>
+
+                <div class="price-container">
+                    <div class="popup-price-new">199€</div>
+                    <div class="popup-price-old">899€</div>
+                </div>
+                
+                <form
+  id="custom-subscribe-form"
+  class="signup-form"
+  data-redirect-url="https://zubalenok.kwiga.com/o/srlALzYeUzcE/payment"
+>
+            
+            <input type="hidden" name="DOMAIN" value="zubalenok-product.online" id="domainInput" />
+        <input type="hidden" name="COURSE_NAME" value="Split-Pro Combo" id="courseInput" />
+  
+  <input 
+    type="text" 
+    name="FNAME" 
+    placeholder="Name" 
+    required 
+  >
+
+  <input 
+    type="email" 
+    name="EMAIL" 
+    placeholder="E-mail" 
+    required 
+  >
+
+  <button type="submit" class="join-btn2">
+    JOIN NOW
+  </button>
+
+</form>
+
+
+                <div class="footer-info">
+                    <p>P.S. 14-day money-back guarantee instant</p>
+                    <p>access right after payment</p>
+                </div>
+
+                <div class="timer-section">
+                    <p class="timer-title">Price goes up in:</p>
+                    <div class="timer-display">
+                        <div class="timer-block">
+                            <span id="hours">00</span>
+                            <label>hours</label>
+                        </div>
+                        <div class="timer-block">
+                            <span id="minutes">29</span>
+                            <label>minutes</label>
+                        </div>
+                        <div class="timer-block">
+                            <span id="seconds">52</span>
+                            <label>seconds</label>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="popup-privacy">Your info stays private</p>
+            </div>
+        </div>
+
+
+        <footer class="footer" id="footer">
+            <div class="footer-timer">
+                <div class="footer-timer-item">
+                    <h3 class="footer-timer-value">23</h3>
+                    <p class="footer-timer-time">hours</p>
+                </div>
+                <div class="footer-timer-item">
+                    <h3 class="footer-timer-value">59</h3>
+                    <p class="footer-timer-time">minutes</p>
+                </div>
+                <div class="footer-timer-item">
+                    <h3 class="footer-timer-value">59</h3>
+                    <p class="footer-timer-time">seconds</p>
+                </div>
+            </div>
+            <img src="./images/button-2.webp" class="open-popup-btn button-2" alt="">
+        </footer>
+    </div>
+    
+    <script 
+    id="inst-tags-script"
+    data-base-tags="3028576,3028607"
+    src="./js/inst-detect.js"></script>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const footer = document.getElementById('footer'); // елемент, до якого додамо клас
+            if (!footer) return;
+
+            window.addEventListener('scroll', () => {
+                // Перевіряємо, скільки проскролено
+                if (window.scrollY >= 200) {
+                    footer.classList.add('active');
+                } else {
+                    footer.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+    <script defer src="./js/anim-steps.js"></script>
+    <script defer src="./js/slider-fon.js"></script>
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/send-mail.js"></script>
+    <script src="./js/slider-anim.js" async></script>
+
+    <script>
+
+        window.onload = function () {
+
+            if (typeof jQuery !== 'undefined') {
+                jQuery(document).ready(function ($) {
+                    console.log('✅ jQuery версия:', $.fn.jquery);
+                    console.log('🔍 Slick доступен:', typeof $.fn.slick);
+
+                    if (typeof $.fn.slick === 'function') {
+                        $('.gallery').slick({
+                            dots: true,
+                            arrows: true,
+                            infinite: true,
+                            speed: 500,
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            variableWidth: true,
+                            centerMode: false,
+                            adaptiveHeight: false,
+                            autoplay: false,
+                            swipe: true,
+                            touchMove: true
+
+
+
+                        });
+                        console.log('🎉 Слайдер УСПЕШНО запущен!');
+                    } else {
+                        console.error('❌ Slick не загружен!');
+                    }
+                });
+            } else {
+                console.error('❌ jQuery не загружен!');
+            }
+        };
+    </script>
+</body>
+
+</html>
